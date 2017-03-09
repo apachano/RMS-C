@@ -44,7 +44,7 @@ Order loadorder(); //Loads an order from order que
 int comporder(Order); //Marks order as complete and removes from order que
 //Item manipulation
 int additem(Order, int itemid, int quantity);
-int removeitem(Order order, int itemid, int quantity);
+int setitem(Order order, int itemid, int quantity);
 int voiditem(Order order, int itemid);
 //Supplimental functions
 int timestamp();
