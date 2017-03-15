@@ -1,3 +1,6 @@
+//Author: Austin Pachano
+//Rev   : 03/08/2017
+
 #include "order.h"
 
 Order initiateorder(int store, int regi, int uid)
@@ -22,9 +25,6 @@ int storeorder(Order);
 }
 
 // ----- Code For Order Manipulation -----  //
-Item finditem
-
-
 int additem(Order order, int itemid, int quantity)
 {
   Item new = malloc(sizeof(struct item));

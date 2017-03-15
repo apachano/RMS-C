@@ -1,0 +1,57 @@
+// ## ###
+// position 1,2 -> Ingredient category
+// position 3-5 -> Ingredient ID in category
+// Categories
+// 00 -> Specials
+// 01 -> Buns
+// 02 -> Grill Sauces
+// 03 -> Toppings
+// 04 -> Meats
+//ID Active StockID Name
+01000 2 000 bun
+01001 1 000 reg
+01002 1 000 quarter
+01003 1 000 bigmac
+01004 1 000 artisinroll
+01005 1 000 grandmac
+01006 0 000 potato
+
+02000 2 000 sauce
+02001 1 000 ketchup
+02002 1 000 mustard
+02003 1 000 macsauce
+02004 1 000 mayo
+02005 1 000 tartar
+02006 1 000 ranch
+02007 0 000 honeymustard
+02008 0 000 barbeque
+02020 1 000 Creamy_Vinnagerette
+
+03000 2 000 toppings
+03001 1 000 pickles
+03002 0 000 crinkle_pickles
+03100 2 000 onions
+03101 1 000 reconstituted_onions
+03102 1 000 slivered_onions
+03103 0 000 red_onions
+03200 2 000 lettuce
+03201 1 000 shredded_lettuce
+03202 1 000 leaf_lettuce
+03300 2 000 cheese
+03301 1 000 American
+03302 1 000 White_Cheddar
+03303 1 000 Shredded_Cheese
+
+04000 2 000 meats
+04001 1 000 Fish_Filet
+04100 2 000 beef
+04101 1 000 10:1
+04102 1 000 4:1
+04103 1 000 6:1
+04103 1 000 3:1
+04200 2 000 Chicken
+04201 1 000 Artisin_Grilled
+04202 1 000 Buttermilk_Crispy
+04203 1 000 McChicken
+04204 1 000 Hot_McChicken
+04205 1 000 Chicken_Nuggett

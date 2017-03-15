@@ -1,5 +1,26 @@
+//Author : Austin Pachano
+//Rev    : 03/08/2017
+
 #include <stdio.h>
 #include <time.h>
+#include "menu.h"
+
+/* ASCII ART DIAGRAM FOR ORDER STRUCTURE
+
+|======|  |->|===========| |->|===========|
+|Order |  |  |Item       | |  |Item       |
+|REgi  |  |  |Next       >-|  |Next       >-
+|Item  >--|  |Quantity   |    |Quantity   |
+|Time  |     |Special    |    |Special    |
+|==|===|     |Ingredients|    |Ingredients|
+   |         |====|======|    |====|======|
+   |              |                |
+|==|======|  |====|=====|     |====|=====|
+|TimePunch|  |Ingredient|     |Ingredient|
+|         |  |next      |     |Next      |
+|=========|  |====|=====|     |====|=====|
+                  |                |
+*/
 
 typedef struct timestamp* Timestamp;
 
@@ -27,7 +48,17 @@ typedef struct item Item;
 struct item{ //Structure to store information on an item
   int itemid;
   int quantity;
+  int special;
   Item next;
+  Ingredient ingredient;
+}
+
+typedef struct ingredient Ingredient;
+
+struct ingredient{ //Linked List to store Ingredients
+  int itemid;
+  int quantity;
+  Ingredient next;
 }
 
 //Begin function prototyping

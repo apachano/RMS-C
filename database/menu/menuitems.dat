@@ -1,0 +1,31 @@
+# ## ###
+# position 1,2 -> Category
+# position 3-4 -> Menu item
+# Categories
+# 01 -> Sandwiches
+# 02 -> Drinks
+# 03 -> Dessert
+# 04 -> Sides
+
+#ID Active NationalID Name Ingredients
+
+01000 2 000 sandwiches 
+01001 1 000 Cheeseburger 01001 02001 02002 03001 03101 03301 04101
+01002 1 000 Hamburger 01001 02001 02002 03001 03101 04101
+01003 1 000 Bigmac 01003 02003 03101 03001 03301 04101 04101
+01004 1 000 Quarterpounder 01002 02001 02002 03001 03102 
+
+02000 2 000 Drinks
+02100 2 000 Sodas
+02101 1 000 Coke
+02102 1 000 Diet_Coke
+02103 1 000 Rootbeer
+02104 1 000 DrPepper
+02105 1 000 Diet_DrPepper
+02106 1 000 Sprite
+02107 1 000 Poweraid
+02108 1 000 Orange_HiC
+
+03000 2 000 Desserts
+03100 2 000 IceCream
+03101 1 000 IceCream_Cone
