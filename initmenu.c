@@ -19,7 +19,7 @@ Menuitem *initiatemenu(){
     menu[i].active = 0;
   }
   printf("scanning file");
-  while(fgets(buffer, 240, fp) != NULL)
+  while(fgets(buffer, 240, fp) != NULL) // Read from file
   {
     printf("scanning line\n");
     if(buffer[0] != '#')//Check for comment lines
