@@ -1,12 +1,12 @@
-//Author: Austin Pachano
+//Author :Austin Pachano
 //http://www.github.com/apachano
-//Rev   : 03/14/2017
+//Rev    :03/18/2017
 //Initiates menu data for use with orders system
 
 #include "menu.h"
 
 Menu *initiatemenu(){
-  static Menu menu;
+  Menu *menu = malloc(sizeof(Menu));
   int id, active, nat, ing, count;
   char buffer[240];
   int sing[100];
@@ -23,7 +23,7 @@ Menu *initiatemenu(){
   for(i=0; i<99999; i++) //Set all menu items in array to inactive
   {
     //printf("i = %ul \n", i);
-    menu.menuitem[i].active = 0;
+    menu->menuitem[i].active = 0;
   }
   printf("scanning file\n");
   while(fgets(buffer, 240, fp) != NULL) // Read from file
@@ -36,8 +36,8 @@ Menu *initiatemenu(){
       if(active == 1)
       {
         printf("Count is %i \n", count);
-        strcpy(menu.menuitem[id].name, name);
-        menu.menuitem[id].active = 1;
+        strcpy(menu->menuitem[id].name, name);
+        menu->menuitem[id].active = 1;
       }
     }
   }
@@ -52,7 +52,7 @@ Menu *initiatemenu(){
   for(i=0; i<99999; i++) //Set all menu items in array to inactive
   {
     //printf("i = %ul \n", i);
-    menu.ingredient[i].active = 0;
+    menu->ingredient[i].active = 0;
   }
   printf("scanning file\n");
   while(fgets(buffer, 240, fp) != NULL) // Read from file
@@ -64,11 +64,11 @@ Menu *initiatemenu(){
     if(active == 1)
       {//Check to see if ingredient is active
         printf("Loading ingredient id = %i \n", count);
-        strcpy(menu.ingredient[id].name, name);
-        menu.ingredient[id].active = 1;
+        strcpy(menu->ingredient[id].name, name);
+        menu->ingredient[id].active = 1;
       }
     }
   }
   fclose(fp);
-  return &menu;
+  return menu;
 }

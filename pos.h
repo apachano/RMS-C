@@ -1,3 +1,7 @@
+//Author :Austin Pachano
+//http://www.github.com/apachano
+//Rev    :03/18/2017
+
 typedef struct regi{
   int regiid;
   int store;
@@ -5,7 +9,7 @@ typedef struct regi{
   int status;
 } Regi;
 
-Regi *initiateregister();
+Regi initiateregister();
 
 //Status codes
 //0 - Inactive

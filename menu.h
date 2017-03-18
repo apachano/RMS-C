@@ -1,3 +1,7 @@
+//Author :Austin Pachano
+//http://www.github.com/apachano
+//Rev    :03/18/2017
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -28,5 +32,7 @@ typedef struct menu{
   Mingredient ingredient[100000];
 } Menu;
 
+
 //Begin function prototyping
 Menu *initiatemenu();
+void printmenu(Menu *menu);

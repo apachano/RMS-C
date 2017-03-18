@@ -1,8 +1,7 @@
-//Author : Austin Pachano
-//Rev    : 03/08/2017
+//Author :Austin Pachano
+//http://www.github.com/apachano
+//Rev    :03/18/2017
 
-#include <stdio.h>
-#include <time.h>
 #include "menu.h"
 
 /* ASCII ART DIAGRAM FOR ORDER STRUCTURE
@@ -56,25 +55,19 @@ struct item{ //Structure to store information on an item
 typedef struct order Order;
 
 struct order{ //structure to store information on an order
-  Timestamp timestamp;
+  Timestamp *timestamp;
   int store;
   int regi;
   int uid;
-  Item item;
+  Item *item;
 };
 
 //Begin function prototyping
-// ----- Register Initiation -----
-int initateregister(); //Initiates variables for register use
 // ------- Order functions -------
-Order initiateorder(int store, int regi, int uid); //Creates a new order
+Order *initiateorder(int store, int regi, int uid); //Creates a new order
 
-int storeorder(Order); //Stores an order in the order que
-Order loadorder(); //Loads an order from order que
-int comporder(Order); //Marks order as complete and removes from order que
+Item *findparent(Item *item, int itemid);
+
 //Item manipulation
-int additem(Order, int itemid, int quantity);
-int setitem(Order order, int itemid, int quantity);
-int voiditem(Order order, int itemid);
-//Supplimental functions
-int timestamp();
+int additem(Menu *menu, Order *order, int itemid, int quantity);
+int voiditem(Menu *menu, Order *order, int itemid);

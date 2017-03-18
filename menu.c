@@ -5,14 +5,15 @@
 
 #include "menu.h"
 
-void printmenu(Menu menu)
+void printmenu(Menu *menu)
 {
-  long i;
+	  printf("| ID    | Name \n");
+  int i;
   for(i=0; i<99999; i++)
   {
-    if(menu.menuitem[i].active == 1)
+    if(menu->menuitem[i].active == 1)
     {
-      printf("%lu %s\n",i, menu.menuitem[i].name);
+      printf("| %05d | %s\n",i, menu->menuitem[i].name);
     }
   }
 }
