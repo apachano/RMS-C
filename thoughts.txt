@@ -1,0 +1,16 @@
+Explination for each file and folder
+database
+  menu
+    ingredients.dat - Stores all ingredients for use in menu related functions
+    menuitems.dat - Stores all menuitems for use in menu related functions
+timepunch.c - Handles all time related functions
+encrypt.c - contains functions used to encrypt passwords etc
+makefile - Makefile for making programs
+menu.h - Header file for using menu related functions
+menuinit - Initializes menu as a structure
+order.c - Core functions for order manipulation
+orderio.c - functins for order I/O
+pos.c - Main file for Point Of Sale systems
+pos.h - Header file to store and load data on a specific POS
+terminal.c - Terminal based interface for a POS
+terminal.h - Header file for terminal based interface
